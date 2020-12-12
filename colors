@@ -8,3 +8,16 @@ colors = {
         'k' : (0.0, 0.0, 0.0),
         'w' : (1.0, 1.0, 1.0),
         }
+
+-->to_rgb(arg)
+Returns an RGB tuple of three floats from 0-1. arg can be an RGB or RGBA sequence or a string in any of several forms:
+-a letter from the set ‘rgbcmykw’
+-a hex color string, like ‘#00FFFF’
+-a standard name, like ‘aqua’
+-a string representation of a float, like ‘0.4’, indicating gray on a 0-1 scale
+if arg is RGBA, the A will simply be discarded.
+
+# example
+from matplotlib import colors
+print(colors.to_rgb('mediumpurple')) 
+(0.5764705882352941, 0.4392156862745098, 0.8588235294117647)
